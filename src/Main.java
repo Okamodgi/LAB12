@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Введите IP-адрес: ");
         String ipAddress = scanner.nextLine();
 
-        String regex = "((\\d|\\d\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|\\d\\d|\\d)";
+        String regex = "^((\\d|\\d\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|\\d\\d|\\d)$";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(ipAddress);
